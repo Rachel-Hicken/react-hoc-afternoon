@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import PeopleHOC from './People';
+import Date from './Date';
+
 
 class App extends Component {
   constructor(){
@@ -26,6 +28,7 @@ class App extends Component {
         people={this.state.people}
         loading = {this.state.people.length === 0}
         />
+        <Date/>
       </div>
     );
   }
